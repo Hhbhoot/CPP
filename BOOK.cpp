@@ -1,48 +1,49 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int n ,m,o;
-class BOOK{
+int n, m, o;
+class BOOK
+{
     int bookno;
     char booktitle[30];
     float price;
 
-    public:
+public:
+    int input()
+    {
+        cout << "Enter book no :";
+        cin >> bookno;
 
-    int input(){
-          cout<<"Enter book no :";
-          cin>>bookno;
+        cout << "Enter book title :";
+        cin >> booktitle;
 
-          cout<<"Enter book title :";
-          cin>>booktitle;
-
-          cout<<"Enter book price :";
-          cin>>price;
-
+        cout << "Enter book price :";
+        cin >> price;
     }
     int purchase()
     {
-        
-      cout<<"How many copies do yo want to buy :";
-      cin>>o ;
-      return o;
 
+        cout << "How many copies do yo want to buy :";
+        cin >> o;
+        return o;
     }
-    int totalcost(){
-        return n*price;
+    int totalcost()
+    {
+        return n * price;
     }
-    int display(){
-        cout<<"BOOK NO\tBOOK TITLE\tPRICE\tCOPIES\tTOTALCOST"<<"\n";
-        cout<<bookno<<"\t"<<booktitle<<"\t\t"<<price<<"\t"<<n<<"\t"<<m;
+    int display()
+    {
+        cout << "BOOK NO\tBOOK TITLE\tPRICE\tCOPIES\tTOTALCOST"
+             << "\n";
+        cout << bookno << "\t" << booktitle << "\t\t" << price << "\t" << n << "\t" << m;
     }
-
 };
-int main(){
+int main()
+{
 
-    
     BOOK b;
-     
-     b.input(); 
-     n= b.purchase();
-     m=b.totalcost();
-     b.display();
+
+    b.input();
+    n = b.purchase();
+    m = b.totalcost();
+    b.display();
 }

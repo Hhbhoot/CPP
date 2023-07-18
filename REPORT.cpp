@@ -1,43 +1,47 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class REPORT{
+
+float x;
+
+class REPORT
+{
 
     int adno;
     char name[20];
     float arr[5];
-    
 
-    public:
+public:
+    int READINFO()
+    {
 
-    int READINFO(){
-         
-         cout<<"Enter ad no :";
-         cin>>adno;
+        cout << "Enter ad no :";
+        cin >> adno;
 
-         cout<<"Enter name :";
-         cin>>name;
+        cout << "Enter name :";
+        cin >> name;
 
-         cout<<"Enter marks of maths science english ss gujarati :";
-         cin>>arr[0]>>arr[1]>>arr[2]>>arr[3]>>arr[4];
-
-
-
+        cout << "Enter marks of maths science english ss gujarati :";
+        cin >> arr[0] >> arr[1] >> arr[2] >> arr[3] >> arr[4];
     }
 
-    float avg(){
+    float avg()
+    {
 
-        return (arr[0]+arr[1]+arr[2]+arr[3]+arr[4])/5;   
-         }
+        return (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / 5;
+    }
 
-     int DISPLAYINFO(){
-        cout<<"adno\tname\tmaths\tscience\tenglish\tss\tgujarati\taverage"<<"\n";
-        cout<<adno<<"\t"<<name<<"\t"<<arr[0]<<"\t"<<arr[1]<<"\t"<<arr[2]<<"\t"<<arr[3]<<"\t"<<arr[4]<<"\t\t"<<avg();
-     }    
+    int DISPLAYINFO()
+    {
+        cout << "adno\tname\tmaths\tscience\tenglish\tss\tgujarati\taverage"
+             << "\n";
+        cout << adno << "\t" << name << "\t" << arr[0] << "\t" << arr[1] << "\t" << arr[2] << "\t" << arr[3] << "\t" << arr[4] << "\t\t" << avg();
+    }
 };
-int main(){
+int main()
+{
 
     REPORT r;
     r.READINFO();
-    float x= r.avg();
+    x = r.avg();
     r.DISPLAYINFO();
 }

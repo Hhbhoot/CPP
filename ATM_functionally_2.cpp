@@ -53,7 +53,7 @@ int main()
     a.current();
     cout << "Your current balance is :" << a.current() << endl;
     int ch;
-    for (int i = 1; i!=(ch==5); i++)
+    for (int i = 1; i!=(ch==4); i++)
     {
         int ch;
         cout << "1.withdraw cash " << endl;

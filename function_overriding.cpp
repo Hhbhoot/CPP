@@ -24,9 +24,11 @@ int main()
     child c;
     c.test();
 
-    base *ptr, b; // pinter banavi point karvu
+    //  base b, *ptr; // pinter banavi point karvu
 
-    ptr = &b;
+    // ptr = &b;
 
-    ptr->test();
+    // ptr->test();
+
+    c.base ::test();
 }

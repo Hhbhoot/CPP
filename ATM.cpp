@@ -61,6 +61,7 @@ int main()
         cout << "3.Show balance " << endl;
         cout << "4.Exit" << endl;
 
+        cout<<"Enter your choice :"<<endl;
         cin >> ch;
 
         switch (ch)
@@ -78,6 +79,10 @@ int main()
             break;
 
         default:
+            break;
+        }
+
+        if(ch==4){
             break;
         }
     }

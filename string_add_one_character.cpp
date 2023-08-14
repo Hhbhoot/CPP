@@ -9,7 +9,7 @@ int main()
     int x = strlen(str);
     cout << "length : " << x << endl;
 
-    for (int i = 5; i > 2; i--)
+    for (int i = 5; i >= 2; i--)
     {
 
         str[i + 1] = str[i];
